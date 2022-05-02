@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>SIGAA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="estilo.css" />
+  <h1>Bem vindo ao SIGAA</h1>
+  <h2>Sistema Integrado de Gestão de Atividades Acadêmicas</h2>
+  <h3>Clique no menu à esquerda para mudar o modo de login.</h3>
+
+</head>
+
+	 <div id="menu-bar">
+    <div id="menu" onclick="onClickMenu()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <ul class="nav" id="nav">
+      <li><a href="#">SIGAA (Acadêmico)</a></li>
+      <li><a href="#">SIPAC (Administrativo)</a></li>
+      <li><a href="#">SIGRH (Recursos Humanos)</a></li>
+      <li><a href="#">SIGPP (Planejamento e Projetos)</a></li>
+      <li><a href="#">SIGED (Gestão de Documentos)</a></li>
+      <li><a href="#">SIGAdmin (Administração) </a></li>
+    </ul>
+  </div>
+  <div class="menu-bg" id="menu-bg"></div>
+  <script src="script.js"></script>
+
+
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Entre:</h1> 
+          <p> 
+            <label for="nome_login">CPF:</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="Sem traços e pontos."/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Senha:</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="Cuidado: maiúsculas e minúsculas contam" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Logar" /> 
+          </p>
+           
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      
+      </div>
+    </div>
+  </div>  
+
+ <footer>
+        SIGAA | Instituto Federal do Sudeste de MG - 3257-4100 | Copyright © 2006-2022 - IF Sudeste MG - sig07.ifsudestemg.edu.br.sig07 - v3.32.17
+    </footer>
+</html>
